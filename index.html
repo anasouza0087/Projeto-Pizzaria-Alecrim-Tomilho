@@ -11,32 +11,65 @@
 
 <body>
     <!-- <a href='https://pt.pngtree.com/free-backgrounds'>fotos de fundo grátis de pt.pngtree.com</a>-->
-    <div class="corpo">
-        <nav class="barra-nav">
-            <ul>
-                <li>Logo - Alecrim&Tomilho</li>
-                <li>Sobre Nós</li>
-                <li>Cardápio</li>
-                <li>Peça pela Internet!</li>
-                <li>Siga-nos</li>
-                <li>Faça uma visita!</li>
-            </ul>
-        </nav>
-        <div class="carrousel">
-            <p>Imagens - Carrousel</p>
+    <nav class="barra-nav">
+        <ul>
+            <li class="img-logo">Logo - Alecrim&Tomilho</li>
+            <a href="#"><li class="lista-pos-header">Sobre Nós</li></a>
+            <a href="#"><li>Cardápio</li></a>
+            <a href="#"><li>Peça pela Internet!</li></a>
+            <a href="#"><li>Faça uma visita!</li></a>
+        </ul>
+    </nav>
+    <div class="carrousel">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="./img/001-V2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/002-V2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/003-V3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./img/004-V2.png" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
         </div>
-        <section class="info001">
-            <!-- <a href='https://pt.pngtree.com/free-backgrounds'>fotos de fundo grátis de pt.pngtree.com</a>-->
-            <p>Info aqui</p>
-        </section>
-        <section class="info002"></section>
-        <footer class="rodape">
-            <ul>
-                <li>&copy; Alecrim&Tomilho</li>
-                <li>Fale Conosco</li>
-            </ul>
-        </footer>
     </div>
+    <section class="info001">
+        <!-- <a href='https://pt.pngtree.com/free-backgrounds'>fotos de fundo grátis de pt.pngtree.com</a>-->
+        <p>Info aqui</p>
+    </section>
+    <section class="info002">
+    </section>
+    <footer class="rodape">
+        <ul>
+            <li>&copy; Alecrim&Tomilho</li>
+            <a href="#"><li class="lista-pos-footer">Fale Conosco</li></a>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+        </ul>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 
