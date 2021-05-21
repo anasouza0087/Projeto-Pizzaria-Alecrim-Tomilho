@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /*font-family: 'Pangolin', cursive;*/
 
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+/*font-family: 'Balsamiq Sans', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +19,25 @@ body {
     margin: 0 auto;
     color: #fff;
 }
+
 a {
     text-decoration: none;
     color: #fff;
 }
+
+.box-nav {
+    width: 1400px;
+    margin: 0 auto;
+}
+
 .barra-nav {
-    height: 150px;
+    height: 120px;
     background-color: #d62828;
 }
 
 .barra-nav li {
     padding-top: 50px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 ul {
@@ -44,29 +57,36 @@ li {
 }
 
 .lista-pos-footer {
-    padding-left: 500px;
+    padding-left: 800px;
 }
 
 .rodape {
     background-color: #d62828;
     height: 110px;
     padding-top: 50px;
-    }
+}
 
 .carrousel {
     color: #000;
+    opacity: 0.6;
     height: 600px;
 }
 
 .info001 {
     background-image: url('./img/background-whiteV2.png');
-    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
     background-color: #fff;
 }
 
 .info002 {
     background-image: url(./img/background-yellow-V3.png);
-    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    padding: 40px 0px 30px 0px;
+    background-color: #F8BF00;
 }
 
 .slider {
@@ -169,4 +189,68 @@ li {
 
 #radio4:checked~.navigation-auto .auto-btn4 {
     background: #008000;
+}
+
+.info002-box {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo {
+    color: #d62828;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 60px;
+}
+
+.info002-corpo {
+    font-family: 'Roboto', sans-serif;
+    color: #008000;
+    font-size: 30px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fonte-estilo {
+    width: 650px;
+    font-family: 'Roboto', sans-serif;
+    color: #008000;
+    font-size: 30px;
+    text-align: left;
+}
+
+.info001-titulo {
+    color: #008000;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 60px;
+}
+
+.info001-citacao {
+    font-family: 'Roboto', sans-serif;
+    color: #d62828;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.info001-paragrafo {
+    font-family: 'Roboto', sans-serif;
+    color: #d62828;
+    font-weight: 600;
+    font-size: 20px;
+    text-indent: 0px;
+}
+
+.info001-box {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+}
+
+.box-rodape {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: left;
 }
