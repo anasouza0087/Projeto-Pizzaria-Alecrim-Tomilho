@@ -1,0 +1,39 @@
+.grid-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: black;
+}
+
+.quadro1, .quadro4, .quadro5 {
+    width: 800px;
+    background-color: green;
+    background-image: url('./img/sobre/grid-box-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 300px;
+}
+
+.quadro2, .quadro3, .quadro6 {
+    width: 800px;
+    background-color: greenyellow;
+    background-image: url('./img/sobre/grid-box-yellow.JPG');
+    background-repeat: no-repeat;
+}
+
+.paragrafo {
+    width: 500px;
+    text-align: left;
+    padding: 20px 0px 0px 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 20px;
+}
+p{
+    padding-top: 40px;
+}
+.titulo-quadro{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+    color: #008000;
+}
