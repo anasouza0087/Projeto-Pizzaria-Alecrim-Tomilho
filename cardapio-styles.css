@@ -1,0 +1,37 @@
+.cardapio-principal {
+    background-image: url('./img/cardápio/cardapio-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardapio-bordas {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.grid-bordas {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    padding: 40px 0px 40px 0px;
+}
+
+.cardapio-bordas ul {
+    color: #008000;
+    text-align: left;
+}
+.pizza-sabores{
+    width: fit-content;
+    margin: 0 auto;
+}
+.grid-sabores{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h3{
+    color: #d62828;
+}
+p{
+    color: #000;
+}
