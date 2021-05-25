@@ -7,7 +7,7 @@
 
 .cardapio-bordas {
     width: fit-content;
-    margin: 0 auto;
+    padding-left: 120px;
 }
 
 .grid-bordas {
@@ -20,18 +20,46 @@
     color: #008000;
     text-align: left;
 }
-.pizza-sabores{
+
+.pizza-sabores {
     width: fit-content;
     margin: 0 auto;
 }
-.grid-sabores{
+
+.grid-sabores {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-h3{
+h3 {
+    color: #d62828;
+    padding: 40px 0px 0px 10px;
+}
+
+p {
+    color: #000;
+    padding: 10px 0px 20px 10px;
+}
+
+.pizza-valores {
+    width: fit-content;
+    text-align: left;
+}
+
+.grid-valores {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-style: dotted;
+    border-color: #E67201;
+}
+
+.tamanho {
     color: #d62828;
 }
-p{
-    color: #000;
+
+.valor {
+    color: #008000;
+}
+.calabresa{
+    background-image: url('./img/cardápio/calabresa.png');
 }
