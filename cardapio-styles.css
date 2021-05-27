@@ -31,6 +31,11 @@
     grid-template-columns: auto auto;
 }
 
+h2 {
+    color: #000;
+    font-family: Pangolin, cursive;
+}
+
 h3 {
     color: #d62828;
     padding: 40px 0px 0px 10px;
@@ -60,6 +65,38 @@ p {
 .valor {
     color: #008000;
 }
-.calabresa{
+
+.calabresa {
     background-image: url('./img/cardápio/calabresa.png');
+}
+
+img {
+    padding-top: 40px;
+}
+.tradicionais{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.grid-tradicionais {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px 0px 40px 0px;
+}
+.grid-tradicionais li{
+    padding-top: 12px;
+}
+.nm-pizza{
+    color:#000;
+}
+.pizza-valor{
+    color:#d62828;
+}
+hr{
+    width: 600px;
+    height: 2px;
+    border-color: black;
+    border-style: dotted;
+    border-radius: 120px;
+    margin-top: 18px;
 }
