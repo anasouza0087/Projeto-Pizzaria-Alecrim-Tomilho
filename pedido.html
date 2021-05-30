@@ -34,15 +34,59 @@
             </ul>
         </div>
     </nav>
-    <div>
+    <div class="logradouro">
+        <h3>Endereço de entrega:</h3>
+        <label for="cep">Insira seu CEP</label>
+        <input type="text" name="cep" id="cep">
+        <label for="rua">* Rua</label>
+        <input type="text" name="rua" id="rua">
+        <label for="numero">* Nº</label>
+        <input type="text" name="numero" id="numero">
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" id="bairro">
+        <label for="adicional">Complemento</label>
+        <input type="text" name="complemento" id="complemento">
+    </div>
+    <div class="pedido">
         <h3>Monte seu pedido</h3>
         <p>Tipo de Massa:</p>
+        <input type="radio" name="fina" id="fina">
+        <label for="fina">Fina</label>
+        <input type="radio" name="grossa" id="grossa">
+        <label for="grossa">Grossa</label>
         <p>Tamanho:</p>
+        <input type="radio" name="grande" id="grande">
+        <label for="grande">Grande</label>
+        <input type="radio" name="media" id="media">
+        <label for="media">Média</label>
+        <input type="radio" name="pequena" id="pequena">
+        <label for="pequena">Pequena</label>
         <p>Inteira / Dividida:</p>
+        <input type="radio" name="inteira" id="inteira">
+        <label for="inteira">Inteira</label>
+        <input type="radio" name="dividida" id="dividida">
+        <label for="dividida">Dividida</label>
         <p>Quantidade:</p>
+        <select name="quantidade" id="quantidade">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
         <p>Sabores</p>
+        <select name="sabor" id="sabor">
+            <option value="caipira">Caipira</option>
+            <option value="calabresa">Calabresa</option>
+            <option value="mussarela">Mussarela</option>
+            <option value="napolitana">Napolitana</option>
+        </select>
     </div>
-
+    <div class="pagamento">
+        <h3>
+            Informe os dados de pagamento:
+        </h3>
+    </div>
     </section>
     <footer class="rodape">
         <div class="box-rodape">
