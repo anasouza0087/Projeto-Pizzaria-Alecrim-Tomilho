@@ -49,6 +49,10 @@
         <button type="submit" id="btnPronto">Pronto!</button>
     </div>
     <div class="pedido">
+        <p>Quantidade:</p>
+        <button id="btnSoma" class="">+</button>
+        <input type="number" name="quantidade" id="quantidade" disabled>
+        <button id="btnSub">-</button>
         <h3>Monte seu pedido</h3>
         <p>Tipo de Massa:</p>
         <input type="radio" name="tipo_massa" id="fina">
@@ -63,14 +67,10 @@
         <input type="radio" name="pizza_tamanho" id="pequena">
         <label for="pequena">Pequena</label>
         <p>Inteira / Dividida:</p>
-        <input type="radio" name="inteira" id="inteira">
+        <input type="radio" name="divisao" id="inteira">
         <label for="inteira">Inteira</label>
-        <input type="radio" name="dividida" id="dividida">
+        <input type="radio" name="divisao" id="dividida">
         <label for="dividida">Dividida</label>
-        <p>Quantidade:</p>
-        <button id="btnSoma" class="">+</button>
-        <input type="number" name="quantidade" id="quantidade" disabled>
-        <button id="btnSub">-</button>
         <p>Sabores</p>
         <select name="sabor" id="sabor">
             <option value="caipira">Caipira</option>

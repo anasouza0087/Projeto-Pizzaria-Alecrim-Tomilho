@@ -3,29 +3,24 @@ let btnSomaPizza = document.getElementById('btnSoma')
 let btnSubPizza = document.getElementById('btnSub')
 let btnEnviaCep = document.getElementById('btnPronto')
 
+let massaFina = document.getElementById('fina')
+let massaGrossa = document.getElementById('grossa')
 
-
-let tipoFina = document.getElementById('fina')
-let tipoGrossa = document.getElementById('grossa')
-
-let tamGrande = document.getElementById('grande')
-let tamMedio = document.getElementById('media')
-let tamPequeno = document.getElementById('pequena')
+let pizzaGrande = document.getElementById('grande')
+let pizzaMedia = document.getElementById('media')
+let pizzaPequena = document.getElementById('pequena')
 
 let pizzaDividida = document.getElementById('dividida')
 let pizzaInteira = document.getElementById('inteira')
 
 let valorTotal = document.getElementById('valor_total')
 
-tipoFina.addEventListener('click', e => {
-  const valTipoFina = 2
+massaFina.addEventListener('click', tipoFina)
+massaGrossa.addEventListener('click', tipoGrossa)
+pizzaGrande.addEventListener('click', tamanhoGrande)
+pizzaInteira.addEventListener('click', divisaoInteira)
 
-  tamGrande.addEventListener('click', e => {
-    const valTamanhoGrande = 15
-    let total = valTipoFina + valTamanhoGrande
-    valorTotal.innerHTML = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
-  })
-})
+var total, valTipo, valTamanho, valPizzaDivisao
 
 btnSomaPizza.addEventListener('click', e => {
   input_pizza_quantidade.value = document.getElementById('quantidade').value++
@@ -39,35 +34,30 @@ btnSubPizza.addEventListener('click', e => {
     input_pizza_quantidade.value = document.getElementById('quantidade').value = value - 1
 })
 
-
-/*pizzaInteira.addEventListener('click', e => {
-
-})
-})
-tamMedio.addEventListener('click', e => {
-
-})
-tamPequeno.addEventListener('click', e => {
-
-})
-})
-
-tipoGrossa.addEventListener('click', e => {
-//nextFunc()
-})
+function tipoFina() {
+  valTipo = 2
+  total = valTipo
+  valorTotal.innerHTML = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 }
-btnSomaPizza.addEventListener('click', e => {
-input_pizza_quantidade.value = document.getElementById('quantidade').value++
-})
 
-btnSubPizza.addEventListener('click', e => {
-input_pizza_quantidade.value = document.getElementById('quantidade').value--
+function tipoGrossa() {
+  valTipo = 3
+  total = valTipo
+  valorTotal.innerHTML = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+}
 
-input_pizza_quantidade.value = document.getElementById('quantidade').value < 0 ?
-input_pizza_quantidade.value = document.getElementById('quantidade').value = 0 :
-input_pizza_quantidade.value = document.getElementById('quantidade').value = value - 1
-})*/
+function tamanhoGrande() {
+  valTamanho = 15
+  total = valTipo + valTamanho
+  valorTotal.innerHTML = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+}
 
+function divisaoInteira() {
+  valPizzaDivisao = 30
+  let pizzaQuantidadeTotal = input_pizza_quantidade.value = document.getElementById('quantidade').value
+  total = (valTipo + valTamanho + valPizzaDivisao) * pizzaQuantidadeTotal
+  valorTotal.innerHTML = total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+}
 
 btnEnviaCep.addEventListener('click', e => {
   let inputNumero = document.getElementById('numero').value
